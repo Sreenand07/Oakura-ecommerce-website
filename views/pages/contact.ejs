@@ -1,0 +1,54 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="contact-main-container">
+    <div class="contact-content">
+
+        <!-- Contact Form Section -->
+        <div class="contact-form-section">
+            <h2>CONTACT US</h2>
+            <form id="contactForm" action="/contact" method="POST" autocomplete="off">
+                <input type="text" name="fullName" placeholder="Full Name*" required />
+                <input type="email" name="email" placeholder="Email*" required />
+                <input type="tel" name="phone" placeholder="Phone*" required />
+                <input type="text" name="subject" placeholder="Subject*" required />
+                <textarea name="message" rows="3" placeholder="Message*" required></textarea>
+                <button type="submit">SUBMIT</button>
+            </form>
+
+            <!-- Success/Error messages -->
+            <% if (success) { %>
+                <p class="success">✅ Your message has been sent successfully!</p>
+            <% } %>
+            <% if (error) { %>
+                <p class="error">❌ <%= error %></p>
+            <% } %>
+
+            <div class="contact-socials">
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg"
+                        alt="Twitter" /></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg"
+                        alt="Google" /></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+                        alt="Facebook" /></a>
+                <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                        alt="YouTube" /></a>
+            </div>
+        </div>
+
+        <!-- Image and Address Section -->
+        <div class="contact-image-section">
+            <div class="contact-address">
+                <img src="/images/location.jpg" alt="location Icon" class="location-icon" />
+                <h3>Oakura</h3>
+                <p>We are here to help you with any questions or concerns you may have.</p>
+                <p>Feel free to reach out to us through the contact form or via our social media channels.</p>
+                <p>We look forward to hearing from you!</p>
+                <span>&#x1F4CD; 497 Evergreen Rd, Roseville, CA 95673</span><br />
+                <span>&#x260E; +01 1111345678</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('../partials/footer') %>

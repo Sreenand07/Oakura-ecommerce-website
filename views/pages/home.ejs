@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head') %>
+    <title>Oakura - Home</title>
+    
+</head>
+
+<body>
+  <%- include('../partials/navbar') %>
+
+    <!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Design Your Dream Space</h1>
+    <p>Oakura brings you quality furniture that blends style and comfort.</p>
+    <div class="hero-buttons">
+      <a href="/shop" class="btn primary">Shop Now</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="/images/hero-sofa.png" alt="Sofa" />
+  </div>
+</section>
+
+    <!-- ABOUT TEXT SECTION -->
+<!-- ABOUT TEXT SECTION -->
+<section class="about-text">
+  <div class="container">
+    <h2>More Than Just Furniture. It’s a "Lifestyle"</h2>
+    <p>
+      
+      At Oakura, we believe furniture is more than just pieces in a room it's a part of your lifestyle.
+      Our designs are inspired by the idea of bringing comfort, beauty, and functionality into every space.
+      We make high-quality, stylish furniture accessible to everyone.
+    </p>
+    <p>
+      From modern living rooms to professional workspaces, our designs adapt seamlessly to your style.
+      Every piece is thoughtfully crafted from durable, high-grade materials to ensure lasting quality.
+    </p>
+  </div>
+</section>
+
+    <!-- IMAGE GRID SECTION -->
+    <section class="image-grid">
+      <div class="grid">
+        <img src="/images/factory1.jpg" alt="Factory Work 1">
+        <img src="/images/factory2.jpg" alt="Factory Work 2">
+        <img src="/images/factory3.jpg" alt="Factory Work 3">
+      </div>
+    </section>
+
+    <!-- PRODUCTS PREVIEW SECTION -->
+    <section class="products-preview">
+      <div class="container">
+        <h2>Crafted with Care</h2>
+        <div class="product-cards">
+          <div class="card">
+            <img src="/images/chair.jpg" alt="Vintage Chair">
+            <h3>Vintage Chair</h3>
+            <div class="card-bottom">
+              <a href="/shop" class="btn-card">Shop Now</a>
+              <span class="price">$499</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/coffee-table.jpg" alt="coffee-table">
+            <h3>Modern Coffee Table</h3>
+            <div class="card-bottom">
+              <a href="/shop" class="btn-card">Shop Now</a>
+              <span class="price">$249</span>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/hanging-chair.jpg" alt="hanging-chair">
+            <h3>Modern Hanging Chair</h3>
+            <div class="card-bottom">
+              <a href="/shop" class="btn-card">Shop Now</a>
+              <span class="price">$399</span>
+            </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+<!-- WHY CHOOSE US SECTION -->
+<section class="why-choose">
+  <div class="container">
+    <div class="why-wrapper">
+      <div class="why-text">
+        <h2>Why We’re Your Best Choice</h2>
+        <p class="why-subtitle">
+          We offer premium quality furniture with timeless designs, crafted to fit any space.
+          With durable materials, elegant finishes, and trusted service, we make furnishing your home or office simple
+          and reliable.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <img src="/icons/award-star.svg" alt="Quality">
+            <div>
+              <h4>Premium Quality</h4>
+              <p>Crafted from high-grade, durable materials to ensure long-lasting performance and beauty.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="/icons/money.svg" alt="Affordable">
+            <div>
+              <h4>Affordable Luxury</h4>
+              <p>High-end furniture made accessible with prices that suit your budget.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="/icons/design.svg" alt="Design">
+            <div>
+              <h4>Elegant Designs</h4>
+              <p>Modern and versatile styles that enhance homes, offices, and all living spaces.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="/icons/service.svg" alt="Service">
+            <div>
+              <h4>Reliable Service</h4>
+              <p>Smooth delivery and dependable customer support for a worry-free experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="why-image">
+        <div class="dot-bg"></div>
+        <img src="/images/why-choose.jpg" alt="Why Oakura">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="interior-showcase">
+  <div class="interior-wrapper">
+    <div class="interior-images">
+      <div class="dot-pattern"></div>
+      <img src="/images/interior1.jpg" alt="Main" class="img1">
+      <img src="/images/interior2.jpg" alt="Top Small" class="img2">
+      <img src="/images/interior3.jpg" alt="Bottom Medium" class="img3">
+    </div>
+    <div class="interior-text">
+      <h2>Designing interiors that match your lifestyle</h2>
+      <p>
+        Our furniture is crafted to suit your taste and fit seamlessly into any space,
+        from home to office. Built with durable materials and delivered with care,
+        we make creating your perfect interior effortless.
+      </p>
+      <div class="features">
+        <p>We create furniture designs that reflect your personality and blend with your space.</p>
+        <p>Each piece is suitable for homes, offices, and multipurpose interiors.</p>
+        <p>Our products use high-quality materials to ensure lasting comfort, beauty, and value.</p>
+        <p>From selection to delivery, we offer smooth, reliable support every step of the way.</p>
+      </div>
+      <a href="/shop" class="btn">Explore</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- News Letter -->
+<section class="newsletter">
+  <div class="newsletter-container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get updates on new arrivals, offers & more.</p>
+    <form action="/subscribe" method="POST" class="newsletter-form">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+    <%- include('../partials/footer') %>
+</body>
+
+</html>

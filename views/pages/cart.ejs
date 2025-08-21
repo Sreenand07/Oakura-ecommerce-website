@@ -1,0 +1,69 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<main class="cart-container">
+
+    <% if (cartItems.length === 0) { %>
+        <!-- Empty Cart Card -->
+        <div class="empty-cart-card" id="emptyCart">
+            <div class="empty-cart-icon">
+                <img src="/icons/cart.svg" alt="Empty Cart Icon" width="100" height="100">
+            </div>
+            <div class="empty-cart-title">Your cart is empty!</div>
+            <div class="empty-cart-desc">Browse and add some furniture to your cart.</div>
+            <a href="/offers">
+                <button class="wishlist-btn">Add to Cart</button>
+            </a>
+        </div>
+    <% } else { %>
+
+        <!-- Cart Add Section + Table -->
+        <div class="cart-action-area" id="cartActionArea">
+            <form id="cartAddForm" method="POST" action="/cart/add" autocomplete="off">
+                <input type="text" name="itemName" placeholder="Furniture name" required>
+                <input type="number" name="itemPrice" placeholder="Price ($)" min="1" required>
+                <input type="number" name="itemQty" placeholder="Qty" value="1" min="1" required>
+                <button type="submit">Add</button>
+            </form>
+
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Furniture</th>
+                        <th>Price ($)</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% let grandTotal = 0; %>
+                    <% cartItems.forEach(item => { 
+                        const total = item.price * item.quantity;
+                        grandTotal += total;
+                    %>
+                        <tr>
+                            <td><%= item.name %></td>
+                            <td>$<%= item.price %></td>
+                            <td><%= item.quantity %></td>
+                            <td>$<%= total %></td>
+                            <td>
+                                <form method="POST" action="/cart/delete/<%= item._id %>">
+                                    <button type="submit">Remove</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="summary">Grand Total</td>
+                        <td colspan="2" class="summary" id="grandTotal">$<%= grandTotal %></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    <% } %>
+</main>
+
+<%- include('../partials/footer') %>

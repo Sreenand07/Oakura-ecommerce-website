@@ -1,0 +1,19 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+    <div class="empty-wishlist-container">
+        <div class="empty-wishlist-card" id="empty-card">
+            <div class="icon-wrap">
+                <i class="fa-solid fa-hand-holding-heart fa-5x"></i>
+            </div>
+            <div class="empty-title">Your wishlist is empty!</div>
+            <div class="empty-text">Explore more and shortlist some items</div>
+            <a href="/offers">
+                <button class="wishlist-btn" id="shopBtn">ADD ITEMS</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="/js/wishlist.js"></script>
+
+    <%- include('../partials/footer') %>

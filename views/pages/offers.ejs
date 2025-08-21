@@ -1,0 +1,289 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/navbar') %>
+
+    <!-- Hero Carousel -->
+    <section class="hero-banner-carousel">
+        <div class="hero-carousel">
+            <div class="hero-slide active"
+                style="background-image: url('https://media.istockphoto.com/id/1442114044/photo/brown-suede-leather-armchair-brass-side-table-and-pastel-green-wooden-cabinet-in-modern-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=iPu7tTLfDIuKYH9KTUmboVuf9IJvekGg4JcxgYHEGpk='); background-size: cover; background-color: rgb(241,241,237);">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1800&q=80');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=2940&q=80');">
+            </div>
+            <div class="hero-slide"
+                style="background-image: url('https://images.unsplash.com/photo-1667262646072-7de0f0395203?auto=format&fit=crop&w=1800&q=80');">
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-text">
+                <h1>Mid-Year Mega Sale</h1>
+                <p>Get up to 50% OFF on selected Oakura collections. Limited time only!</p>
+                <button class="banner-btn">Shop Now</button>
+            </div>
+
+            <button class="hero-prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="hero-next" aria-label="Next Slide">&#10095;</button>
+
+            <div class="hero-dots" role="tablist">
+                <span class="hero-dot active" role="tab" aria-selected="true" tabindex="0"></span>
+                <span class="hero-dot" role="tab" tabindex="-1"></span>
+                <span class="hero-dot" role="tab" tabindex="-1"></span>
+                <span class="hero-dot" role="tab" tabindex="-1"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Products -->
+    <section class="flash-sale">
+    <div class="flash-header">
+        <h2>Flash Sale</h2>
+        <div class="timer" id="countdown-timer">
+            <span id="fs-hours">00</span>:<span id="fs-minutes">00</span>:<span id="fs-seconds">00</span>
+        </div>
+    </div>
+    <div class="blue-box">
+        <div class="flash-products">
+            <div class="flash-product">
+                <button class="fav-btn" aria-label="Add Oakwood Sofa to favorites">&#9829;</button>
+                <img src="https://images.unsplash.com/photo-1680702699412-7df12ead8846?auto=format&fit=crop&w=400&q=80"
+                    alt="Sofa" />
+                <div class="fp-details">
+                    <h3>Oakwood Sofa</h3>
+                    <p><span class="fp-old">$799</span> <span class="fp-new">$399</span></p>
+                </div>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="flash-product">
+                <button class="fav-btn" aria-label="Add Modern Armchair to favorites">&#9829;</button>
+                <img src="https://images.unsplash.com/photo-1580424842158-73c4d4bad766?auto=format&fit=crop&w=400&q=80"
+                    alt="Armchair" />
+                <div class="fp-details">
+                    <h3>Modern Armchair</h3>
+                    <p><span class="fp-old">$249</span> <span class="fp-new">$159</span></p>
+                </div>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="flash-product">
+                <button class="fav-btn" aria-label="Add Oakura Work Desk to favorites">&#9829;</button>
+                <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?auto=format&fit=crop&w=400&q=80"
+                    alt="Desk" />
+                <div class="fp-details">
+                    <h3>Oakura Work Desk</h3>
+                    <p><span class="fp-old">$399</span> <span class="fp-new">$279</span></p>
+                </div>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="flash-product">
+                <button class="fav-btn" aria-label="Add Minimalist Bookshelf to favorites">&#9829;</button>
+                <img src="https://images.unsplash.com/photo-1543248939-4296e1fea89b?auto=format&fit=crop&w=400&q=80"
+                    alt="Bookshelf" />
+                <div class="fp-details">
+                    <h3>Minimalist Bookshelf</h3>
+                    <p><span class="fp-old">$229</span> <span class="fp-new">$149</span></p>
+                </div>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+            <div class="flash-product">
+                <button class="fav-btn" aria-label="Add Oak Side Table to favorites">&#9829;</button>
+                <img src="https://images.unsplash.com/photo-1611486212355-d276af4581c0?auto=format&fit=crop&w=400&q=80"
+                    alt="Oak Side Table" />
+                <div class="fp-details">
+                    <h3>Oak Side Table</h3>
+                    <p><span class="fp-old">$149</span> <span class="fp-new">$79</span></p>
+                </div>
+                <button class="shop-now-btn">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-container">
+    <div class="offer-box blue">
+        <div class="ribbon">Spring Sale</div>
+        <h2 class="offer-title">30% OFF</h2>
+        <div class="discount">30% <small>OFF</small></div>
+        <p class="offer-desc">Upgrade your living room with our spring collection. Selected sofas and coffee tables
+            included.</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>
+    <div class="offer-box green">
+        <div class="ribbon">Eco Friendly</div>
+        <h2 class="offer-title">25% OFF</h2>
+        <div class="discount">25% <small>OFF</small></div>
+        <p class="offer-desc">25% off on all eco-friendly furniture made from sustainable oak wood.</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>
+    <div class="offer-box purple">
+        <div class="ribbon">New Arrival</div>
+        <h2 class="offer-title">15% OFF</h2>
+        <div class="discount">15% <small>OFF</small></div>
+        <p class="offer-desc">Enjoy 15% off on our new collection—modern, minimal, and durable designs.</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>
+    <div class="offer-box orange">
+        <div class="ribbon">Clearance</div>
+        <h2 class="offer-title">Up to 50% OFF</h2>
+        <div class="discount">50% <small>OFF</small></div>
+        <p class="offer-desc">Clearance sale on last season’s dining sets and bedroom furniture. Grab before it’s gone!</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>
+    <div class="offer-box teal">
+        <div class="ribbon">Festive Bonanza</div>
+        <h2 class="offer-title">40% OFF</h2>
+        <div class="discount">40% <small>OFF</small></div>
+        <p class="offer-desc">Celebrate this season with 40% off on elegant oak beds and nightstands.</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>
+    <div class="offer-box red">
+        <div class="ribbon">Hot Pick</div>
+        <h2 class="offer-title">Buy 1 Get 1</h2>
+        <div class="discount">BOGO</div>
+        <p class="offer-desc">Buy one modern lamp, get another free! Mix and match colors & styles.</p>
+        <button class="offer-btn">Shop Now</button>
+    </div>    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+    <h2>Browse By Category</h2>
+    <div class="category-list">
+        <div class="category-item"><span class="cat-icon">🛋️</span>
+            <div>Sofas</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🪑</span>
+            <div>Chairs</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🛏️</span>
+            <div>Beds</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🗄️</span>
+            <div>Storage</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🖥️</span>
+            <div>Desks</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🔅</span>
+            <div>Lamps</div>
+        </div>
+        <div class="category-item"><span class="cat-icon">🍽️</span>
+            <div>Dining</div>
+        </div>
+    </div>   
+</section>
+
+    <!-- Best Sellers -->
+    <section class="best-sellers">
+    <h2>Best Sellers</h2>
+    <div class="products">
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Oakwood Dining Table to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1505409628601-edc9af17fda6?auto=format&fit=crop&w=400&q=80"
+                alt="Dining Table" />
+            <div class="p-title">Oakwood Dining Table</div>
+            <div class="p-price">$499</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Classic Wardrobe to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1614631446501-abcf76949eca?auto=format&fit=crop&w=400&q=80"
+                alt="Wardrobe" />
+            <div class="p-title">Classic Wardrobe</div>
+            <div class="p-price">$349</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Queen Bed to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1502672023488-70e25813eb80?auto=format&fit=crop&w=400&q=80"
+                alt="Bed" />
+            <div class="p-title">Queen Bed</div>
+            <div class="p-price">$599</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Modern Desk Chair to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1670915891542-63251e9ea5d9?auto=format&fit=crop&w=400&q=80"
+                alt="Desk Chair" />
+            <div class="p-title">Modern Desk Chair</div>
+            <div class="p-price">$109</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Rocking Chair to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=400&q=80"
+                alt="Rocking Chair" />
+            <div class="p-title">Rocking Chair</div>
+            <div class="p-price">$199</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Classic Book Shelf to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=400&q=80"
+                alt="Book Shelf" />
+            <div class="p-title">Classic Book Shelf</div>
+            <div class="p-price">$179</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Coffee Table to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=400&q=80"
+                alt="Coffee Table" />
+            <div class="p-title">Coffee Table</div>
+            <div class="p-price">$129</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+            <button class="fav-btn" aria-label="Add Night Stand to favorites">&#9829;</button>
+            <img src="https://images.unsplash.com/photo-1649194271420-b2ff52418a62?auto=format&fit=crop&w=400&q=80"
+                alt="Night Stand" />
+            <div class="p-title">Night Stand</div>
+            <div class="p-price">$79</div>
+            <button class="shop-now-btn">Shop Now</button>
+        </div>
+    </div>
+</section>
+
+<%- include('../partials/footer') %>
+<script src="/js/offers.js">
+    document.addEventListener("DOMContentLoaded", () => {
+    const shopButtons = document.querySelectorAll(".shop-now-btn");
+
+    shopButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const productCard = button.closest(".product-card, .flash-product");
+            const productName = productCard.querySelector("h3, .p-title").innerText.trim();
+            const priceText = productCard.querySelector(".fp-new, .p-price").innerText.replace('$', '').trim();
+            const productImage = productCard.querySelector("img").getAttribute("src");
+
+            const productData = {
+                name: productName,
+                price: parseFloat(priceText),
+                image: productImage,
+                quantity: 1
+            };
+
+            fetch("/cart/add", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(productData)
+            })
+            .then(res => {
+                if (res.ok) {
+                    alert(`${productName} added to cart!`);
+                } else {
+                    alert("Failed to add to cart.");
+                }
+            })
+            .catch(err => {
+                console.error("Error adding to cart:", err);
+                alert("Something went wrong!");
+            });
+        });
+    });
+});
+
+</script>
